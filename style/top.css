@@ -1,0 +1,27 @@
+/*logo*/
+
+html{
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+.top-image {
+  background-image: url(../images/ui/top.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 290px 180px;
+  margin-top: 240px;
+  padding-bottom: 44%;
+}
+
+
+.btn {
+  margin-top: 80px;
+  text-align: center;
+}
+/*top-btn*/
+.top-btn {
+  font-size: 30px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+
+}

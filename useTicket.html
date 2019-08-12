@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="style/ar.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/useTicket.css">
+    <title>NIT2.0 ARスタンプラリー</title>
+
+    <script type="text/javascript">
+    function disp(){
+      // 「OK」時の処理開始 ＋ 確認ダイアログの表示
+      if(window.confirm('チケットを使用します（この操作は取り消すことができません）')){
+        location.href = "end.html"; // example_confirm.html へジャンプ
+        localStorage.setItem("ticket", "OFF");
+      }
+
+      // 「キャンセル」時の処理開始
+      else{
+        window.alert('キャンセルされました'); // 警告ダイアログを表示
+      }
+    }
+    </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="ticket-title">NIT2.0 Special Ticket</h2>
+    <p class="ticket-desc">チケットを使用する際は<br>スタッフまでお知らせください<br>(第二体育館)</p>
+  </div>
+  <footer>
+    <input type="button" value="使用する" style="font-weight:bolder" onClick="disp()">
+  </footer>
+</body>
+</html>

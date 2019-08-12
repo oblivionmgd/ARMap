@@ -1,0 +1,273 @@
+html {
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+body{
+    font-size: 1.6em;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+}
+
+a-scene {
+    overflow: hidden;
+}
+
+#tab-bar {
+    background: linear-gradient(to right, #00d9ff, #00d9ff);
+    background: -webkit-linear-gradient(left, #00d9ff, #00d9ff);
+    background: -moz-linear-gradient(left, #00d9ff, #00d9ff);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 53px;
+    display: none;
+}
+
+.tab-item-box {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.tab-item-icon {
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icon-camera {
+    background-image: url("../images/icons/camera-normal.svg");
+}
+
+#icon-stamp {
+    background-image: url("../images/icons/stamp-normal.svg");
+}
+
+#icon-map {
+    background-image: url("../images/icons/map-normal.svg");
+}
+
+#icon-info {
+    background-image: url("../images/icons/info-normal.svg");
+}
+
+.tab-item-label{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #FFF;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tab-active .tab-item-label {
+    color: #00d9ff;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.tab-active #icon-camera {
+    background-image: url("../images/icons/camera-selected.svg");
+}
+
+.tab-active #icon-stamp {
+    background-image: url("../images/icons/stamp-selected.svg");
+}
+
+.tab-active #icon-map {
+    background-image: url("../images/icons/map-selected.svg");
+}
+
+.tab-active #icon-info {
+    background-image: url("../images/icons/info-selected.svg");
+}
+
+#main-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.tab-container {
+    height: 100vh;
+    /*width: 100vw;*/
+    margin: 0;
+    padding: 0;
+}
+
+.tab-title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #292929;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+#stamp-num-text {
+    color: #505050;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.stamp-card-outer {
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+.stamp-card {
+    /* box-shadow:0px 0px 10px -2px #878787; */
+    margin: 8px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgb(201, 201, 201);
+}
+
+.stamp-image {
+    width: 94%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stamp-label {
+    font-size: 1.5rem;
+    height: 45px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: 600;
+    color: #292929;
+    text-align: center;
+}
+
+#stamp-button-outer {
+    width: 100%;
+    position: fixed;
+    bottom: 85px;
+}
+
+#stamp-button-box {
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(to right, #00d9ff, #00d9ff);
+    background: -webkit-linear-gradient(left, #00d9ff, #00d9ff);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+#stamp-button-label {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#copyright{
+    font-size: 0.8em;
+    color: #292929;
+    width: 100%;
+    text-align: center;
+}
+
+video {
+    overflow-x: hidden;
+}
+
+#stamp-container, #map-container, #info-container {
+    background-color: #FFF;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.footer-margin {
+    clear: left;
+    width: 100%;
+    height: 200px;
+}
+
+.swal-title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #292929;
+}
+
+.swal-button {
+    background: linear-gradient(to right, #00d9ff, #00d9ff);
+    background: -webkit-linear-gradient(left, #00d9ff, #00d9ff);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.swal-button:focus {
+    outline-width: 0;
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+#stamp-complete {
+    display: none;
+}
+
+#stamp-complete-img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.info-section {
+    text-align: center;
+    color: #292929;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.info-contents {
+    color: #292929;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}

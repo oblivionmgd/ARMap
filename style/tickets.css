@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+html{
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+.container {
+  margin-top: 28px;
+}
+
+.container .attention {
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 10vh;
+  margin-bottom: 27px;
+}
+
+.ticket {
+  width: 100%;
+}
+
+.belongings a {
+  display: block;
+  padding: 50px 30px;
+  background: #2d8fdd;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 32px;
+  color: #fff;
+  margin-top: 20px !important;
+}
+
+.belongings{
+  padding-top: 90px;
+  text-align: center;
+}

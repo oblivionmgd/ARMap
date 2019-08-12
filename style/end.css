@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html{
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+body {
+  /*height: 100%;*/
+  background: linear-gradient(to top right, #2d8fdd, #a8f6ff );
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 100%;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+.container h2, a {
+  color: #ffffff;
+}
+
+.container h2 {
+  margin-bottom: 100px;
+}

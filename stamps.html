@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/stamps.css">
+    <link rel="stylesheet" href="style/ar.css">
+    <title>NIT2.0 ARスタンプラリー</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="header-title">
+      <h1>Stamps</h1>
+    </div>
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <label class="btn-close" for="nav-input"><i class="fas fa-times"></i></label>
+        <ul class="page-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="stamps.html">Stamps</a>
+          </li>
+          <li>
+            <a href="ar.html">Camera</a>
+          </li>
+          <li>
+            <a href="tickets.html">Tickets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+
+    <div id="stamp-container" class="tab-container" v-show="stampSelected">
+
+        <div id="stamp-num-text"></div>
+        <div id="stamp-complete"><img src="images/stamps/complete.png" alt="" id="stamp-complete-img"></div>
+        <div class="stamp-card-outer">
+            <div class="stamp-card">
+                <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-1">
+                <div class="stamp-label">機械工学科</div>
+            </div>
+        </div>
+
+        <div class="stamp-card-outer">
+                <div class="stamp-card">
+                    <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-2">
+                    <div class="stamp-label">電気電子工学科</div>
+                </div>
+        </div>
+
+        <div class="stamp-card-outer">
+                <div class="stamp-card">
+                    <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-3">
+                    <div class="stamp-label">電子制御工学科</div>
+                </div>
+        </div>
+
+        <div class="stamp-card-outer">
+                <div class="stamp-card">
+                    <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-4">
+                    <div class="stamp-label">制御情報工学科</div>
+                </div>
+        </div>
+
+
+        <div class="stamp-card-outer">
+                <div class="stamp-card">
+                    <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-5">
+                    <div class="stamp-label">物質工学科</div>
+                </div>
+        </div>
+
+            <div class="footer-margin"></div>
+    </div>
+
+  </div>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <script src="js/ua-parser.min.js"></script>
+  <script src="js/stamp-look.js"></script>
+</body>
+
+</html>

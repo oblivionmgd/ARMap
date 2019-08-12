@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+html{
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+.department {
+  display: inline-block;
+}
+
+.container {
+  /*margin-top: 40px;*/
+}
+
+.container .department img {
+  margin-bottom: 22px;
+}
+
+.container .line1, .line2 {
+  display: inline-block;
+}
+
+.container .line1 {
+  margin-top: 46px;
+}
+
+.container .line1 a {
+  float: left;
+}
+
+.container .line1 .dep-m {
+  margin-right: 60px;
+}
+
+.container .line2 {
+  margin-top: 89px;
+}
+
+.container .line2 a {
+  float: left;
+}
+
+.container .line2 .dep-s {
+  margin: 0 48px;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115922399-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115922399-2');
+  </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/ar.css">
+    <!--
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/main.css">
+    -->
+    <link rel="stylesheet" href="style/home.css">
+    <title>NIT2.0 ARスタンプラリー</title>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="NIT2.0 ARスタンプラリー" />
+<meta property="og:description"        content="各学科の棟の入り口にあるスタンプを集めよう！" />
+
+</head>
+
+<body>
+    <script src="./js/aframe.min.js"></script>
+    <script src="./js/aframe-ar.min.js"> </script>
+
+    <a-scene embedded arjs="trackingMethod:best; debugUIEnabled:false;">
+
+      <a-assets>
+        <a-asset-item id="obj1" src="/models/M/m-model2.gltf"></a-asset-item>   <!-- objファイル -->
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="obj2" src="/models/Dept_E/dept_e.obj"></a-asset-item>   <!-- objファイル -->
+        <a-asset-item id="mtl2" src="/models/Dept_E/dept_e.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="obj3" src="/models/Dept_D/dka.obj"></a-asset-item>   <!-- objファイル -->
+        <a-asset-item id="mtl3" src="/models/Dept_D/dka.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="obj4" src="/models/makoto/S/S.obj"></a-asset-item>   <!-- objファイル -->
+        <a-asset-item id="mtl4" src="/models/makoto/S/S.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="obj5" src="/models/makoto/C/C.obj"></a-asset-item>   <!-- objファイル -->
+        <a-asset-item id="mtl5" src="/models/makoto/C/C.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-assets>
+        <a-asset-item id="obj_hagi" src="/models/makoto/hagi/hagi.obj"></a-asset-item>   <!-- objファイル -->
+        <a-asset-item id="mtl_hagi" src="/models/makoto/hagi/hagi.mtl"></a-asset-item>
+      </a-assets>
+
+<!--環境光源
+      <a-light type="ambient" intensity="1.5" color="#fff"></a-light>
+-->
+<!--平行光源
+      <a-entity light="type: hemisphere; color: #fff; groundColor: #fff; intensity: 1.5"></a-entity>
+-->
+<!--平行光源
+      <a-light type="directional" position="-1 2 1" rotation="0 360 0" target="#directionaltarget">
+        <a-entity id="light" position="0 1 0"></a-entity>
+      </a-light>
+-->
+
+      <a-entity light="type: ambient; intensity: 1.0;"></a-entity>
+        <a-entity
+            light="type: directional;
+                   castShadow: true;
+                   intensity: 1.5;"
+            position="0.2 2 1">
+        </a-entity>
+
+      <a-marker preset="custom" type="pattern" url="./marker/m01.patt" markerid="1" >
+
+          <a-gltf-model
+              src="#obj1"
+              scale="0.5 0.5 0.5"
+              position="0 1.0 0"
+              rotation="270 0 0"
+              shadow="receive: true">
+
+              <a-animation
+                  attribute="rotation"
+                  from="270 0 0"
+                  to="270 360 360"
+                  dur="5000"
+                  repeat="indefinite"
+                  easing="ease"
+              ></a-animation>
+
+          </a-gltf-model>
+      </a-marker>
+
+        <a-marker preset="custom" type="pattern" url="./marker/m02.patt" markerid="2" >
+          <a-obj-model
+              src="#obj2"
+              mtl="#mtl2"
+              scale="0.005 0.005 0.005"
+              position="0 1.0 0">
+              <a-animation
+                  attribute="rotation"
+                  from="0 0 0"
+                  to="0 360 0"
+                  dur="4000"
+                  easing="linear"
+                  repeat="indefinite"
+              ></a-animation>
+          </a-obj-model>
+        </a-marker>
+
+        <a-marker preset="custom" type="pattern" url="./marker/m03.patt"  markerid="3">
+          <a-obj-model
+              src="#obj3"
+              mtl="#mtl3"
+              play-all-model-animations=""
+              position="0 0 0" rotation="0 0 0"
+              scale="0.005 0.005 0.005"
+              visible="true">
+              <a-animation
+                  attribute="rotation"
+                  from="270 0 0"
+                  to="270 360 0"
+                  dur="5000"
+                  repeat="indefinite"
+                  easing="ease"
+              ></a-animation>
+          </a-obj-model>
+        </a-marker>
+
+        <a-marker preset="custom" type="pattern" url="./marker/m04.patt"  markerid="4">
+          <a-obj-model
+              src="#obj4"
+              mtl="#mtl4"
+              scale="0.5 0.5 0.5"
+              position="0 1.0 0">
+              <a-animation
+                  attribute="rotation"
+                  from="270 0 0"
+                  to="270 360 0"
+                  dur="5000"
+                  repeat="indefinite"
+                  easing="ease"
+              ></a-animation>
+          </a-obj-model>
+        </a-marker>
+
+        <a-marker preset="custom" type="pattern" url="./marker/m05.patt"  markerid="5">
+          <a-obj-model
+              id="light"
+              src="#obj5"
+              mtl="#mtl5"
+              scale="0.5 0.5 0.5"
+              position="0 1.0 0">
+              <a-animation
+                  attribute="rotation"
+                  from="270 0 0"
+                  to="270 360 0"
+                  dur="5000"
+                  repeat="indefinite"
+                  easing="ease"
+              ></a-animation>
+          </a-obj-model>
+        </a-marker>
+
+        <a-marker preset="custom" type="pattern" url="./marker/m_hagi.patt"  markerid="10">
+          <a-obj-model
+              id="light"
+              src="#obj_hagi"
+              mtl="#mtl_hagi"
+              scale="0.5 0.5 0.5"
+              position="0 1.0 0">
+              <a-animation
+                  attribute="rotation"
+                  from="270 0 0"
+                  to="270 360 0"
+                  dur="5000"
+                  repeat="indefinite"
+                  easing="ease"
+              ></a-animation>
+          </a-obj-model>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+
+
+    <div id="main-container">
+      <header>
+        <div class="header-title">
+          <h1>Camera</h1>
+        </div>
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input" style="top: 30px;"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <label class="btn-close" for="nav-input"><i class="fas fa-times"></i></label>
+        <ul class="page-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="stamps.html">Stamps</a>
+          </li>
+          <li>
+            <a href="ar.html">Camera</a>
+          </li>
+          <li>
+            <a href="tickets.html">Tickets</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+        <div id="camera-container" class="tab-container" v-show="cameraSelected">
+        </div>
+
+        <div id="stamp-container" class="tab-container" v-show="stampSelected">
+            <div class="tab-title">スタンプ帳</div>
+
+            <div id="stamp-num-text">残り5ヶ所です</div>
+            <div id="stamp-complete"><img src="images/stamps/complete.png" alt="" id="stamp-complete-img"></div>
+            <div class="stamp-card-outer">
+                <div class="stamp-card">
+                    <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-1">
+                    <div class="stamp-label">機械工学科</div>
+                </div>
+            </div>
+
+            <div class="stamp-card-outer">
+                    <div class="stamp-card">
+                        <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-2">
+                        <div class="stamp-label">電気電子工学科</div>
+                    </div>
+            </div>
+
+            <div class="stamp-card-outer">
+                    <div class="stamp-card">
+                        <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-3">
+                        <div class="stamp-label">電子制御工学科</div>
+                    </div>
+            </div>
+
+            <div class="stamp-card-outer">
+                    <div class="stamp-card">
+                        <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-4">
+                        <div class="stamp-label">制御情報工学科</div>
+                    </div>
+            </div>
+
+
+            <div class="stamp-card-outer">
+                    <div class="stamp-card">
+                        <img src="images/stamps/empty.png" alt="" class="stamp-image" id="stamp-img-5">
+                        <div class="stamp-label">物質工学科</div>
+                    </div>
+            </div>
+
+                <div class="footer-margin"></div>
+        </div>
+
+        <div id="map-container" class="tab-container" v-show="mapSelected">
+            <div class="tab-title">マップ(未実装)</div>
+        </div>
+
+        <div id="info-container" class="tab-container" v-show="infoSelected">
+            <div class="tab-title">このページについて</div>
+            <div class="info-section">連絡先</div>
+            <div class="info-contents">nit.numazu.m[at]gmail.com</div>
+
+            <div id="copyright">
+                    Copyright © 2018 <br>
+                    National Institute of Technology, Numazu Colledge <br>
+                   Department of Mechanical Engineering . <br>
+                   All rights reserved.
+            </div>
+        </div>
+
+<!--v-bind:classでtabを動的に切り替える-->
+        <div id="tab-bar">
+            <div
+            class="tab-item-box"
+            v-bind:class="{ 'tab-active' : cameraSelected }"
+            v-on:click="tabSelected('camera')">
+                <div class="tab-item-icon" id="icon-camera"></div>
+                <div class="tab-item-label">カメラ</div>
+            </div>
+            <div
+            class="tab-item-box"
+            v-bind:class="{ 'tab-active' : stampSelected }"
+            v-on:click="tabSelected('stamp')">
+                <div class="tab-item-icon" id="icon-stamp"></div>
+                <div class="tab-item-label">スタンプ</div>
+            </div>
+            <div
+            class="tab-item-box"
+            v-bind:class="{ 'tab-active' : mapSelected }"
+            v-on:click="tabSelected('map')">
+                <div class="tab-item-icon" id="icon-map"></div>
+                <div class="tab-item-label">マップ</div>
+            </div>
+            <div
+            class="tab-item-box"
+            v-bind:class="{ 'tab-active' : infoSelected }"
+            v-on:click="tabSelected('info')">
+                <div class="tab-item-icon" id="icon-info"></div>
+                <div class="tab-item-label">情報</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/ua-parser.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

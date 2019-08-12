@@ -1,0 +1,514 @@
+@charset "UTF-8";
+/* ====================================================================================
+ + media query +
+==================================================================================== */
+/* exp
+@media screen and (min-width: $breakPoint1) {
+}
+*/
+/* ====================================================================================
+  + font setting +
+==================================================================================== */
+/* base	16px
+(36px) ->  2.25rem
+(34px) ->  2.13rem
+(32px) ->  2rem
+(30px) ->  1.88rem
+(28px) ->  1.75rem
+(26px) ->  1.63rem
+(24px) ->  1.5rem
+(22px) ->  1.38rem
+(20px) ->  1.25rem
+(19px) ->  1.19rem
+(18px) ->  1.13rem
+(17px) ->  1.07rem
+(16px) ->  1rem
+(15px) ->  0.94rem
+(14px) ->  0.88rem
+(13px) ->  0.82rem
+(12px) ->  0.75rem
+(11px) ->  0.69rem
+(10px) ->  0.65rem
+(9px)	->   0.55rem
+(8px)	->   0.5rem
+(6px)	->   0.4rem
+*/
+/* ====================================================================================
+ + base setting +
+/* ==================================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+a {
+  color: #444750;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a.underline:hover {
+  text-decoration: underline;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: nomal;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ffd56b;
+  font-weight: 700;
+}
+
+pre, code, kbd, samp {
+  /*
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  */
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+  /* Internet Explorer 11- */
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+ul, ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  display: inline;
+  line-height: 1px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+table button, table input {
+  *overflow: auto;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input {
+  -webkit-border-radius: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  width: auto;
+  /* Firefox 36+ */
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+details {
+  display: block;
+  /* Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+progress {
+  display: inline-block;
+  /* Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+summary {
+  display: block;
+  /* Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
+}
+
+[hidden] {
+  display: none;
+  /* Internet Explorer 10- */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+:root {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  color: #444750;
+  cursor: default;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font: 16px/1.5 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial, sans-serif;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* Edge 12+, Internet Explorer 11- */
+  overflow-y: scroll;
+  /* All browsers without overlaying scrollbars */
+  -webkit-text-size-adjust: 100%;
+  /* iOS 8+ */
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #444750;
+}
+
+* {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: nomal;
+  margin: 0;
+}
+
+audio,
+canvas,
+iframe,
+svg,
+video {
+  vertical-align: top;
+}
+
+/* specify the background color of form elements */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: inherit;
+/*  font-family: inherit; */
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+/* specify the standard appearance of selects */
+select {
+  -moz-appearance: none;
+  /* Firefox 40+ */
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+select::-ms-value {
+  color: currentColor;
+  /* Edge 12+, Internet Explorer 11- */
+}
+
+/* specify the background color, font color, and drop shadow of text selections */
+::-moz-selection {
+  background-color: #b3d4fc;
+  /* required when declaring ::selection */
+  color: #4c2b03;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  /* required when declaring ::selection */
+  color: #4c2b03;
+  text-shadow: none;
+}
+
+/* specify the progress cursor of updating elements */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* specify the pointer cursor of trigger elements */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+[aria-disabled] {
+  cursor: default;
+}
+
+/* specify the style of visually hidden yet accessible elements */
+[hidden][aria-hidden="false"] {
+  clip: rect(0 0 0 0);
+  display: inherit;
+  position: absolute;
+}
+
+[hidden][aria-hidden="false"]:focus {
+  clip: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  font-size: 0.1em;
+  line-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/*  - base setting ==================================================================== */
+/* ====================================================================
+ base setting */
+body, p, ul, dl, dt, dd, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444750;
+}
+
+.wrapper{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	background: url("../img/bg.png") repeat-x;
+}
+
+
+
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+body:after{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+* {
+    color: #000000;
+}
+
+h1#top-title{
+    font-weight: 700;
+}
+
+h1#top-title div{
+    text-align: center;
+}
+
+div#department-1 {
+    font-size: 1.9rem;
+    margin-top: 30px;
+}
+
+div#department-2 {
+    font-size: 1.9rem;
+    margin-bottom: -20px;
+}
+
+div#ar {
+    margin-bottom: -15px;
+    font-weight: 800;
+    font-size: 13rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div#stamp {
+    font-size: 2.4rem;
+}
+
+img#ar-logo {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+p#description,  div#fes-description{
+    font-size: 1.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#ar-link-box {
+    text-align: center;
+}
+
+a#ar-link {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    background-color: #FFF;
+    color: #00d9ff;
+}
+
+div#link-description{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+
+}
+
+div#fes-description{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a#default-link {
+    text-decoration: none;
+}
+
+div#copyright {
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
