@@ -1,86 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="base-style.css">
 
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/home.css">
-  <title>NIT2.0 ARスタンプラリー</title>
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@nit_2_0">
-  <meta property="og:url" content="https://serene-joliot-f3a5ff.netlify.com" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="NIT2.0 ARスタンプラリー">
-  <meta property="og:description" content="5つのスタンプを集めて景品を貰おう！">
-  <meta property="og:image" content="https://serene-joliot-f3a5ff.netlify.com/images/ui/stamp.png">
-</head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
 
-<body>
-  <header>
-    <div class="header-title">
-      <h1>Home</h1>
-    </div>
-    <div id="nav-drawer">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">
-        <label class="btn-close" for="nav-input2"><em class="fas fa-times"></em></label>
-        <ul class="page-list">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="stamps.html">Stamps</a>
-          </li>
-          <li>
-            <a href="ar.html">Camera</a>
-          </li>
-          <li>
-            <a href="tickets.html">Tickets</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+    <body>
+        <!-- Head -->
+        <header>
+            Home
+        </header>
 
+        <!-- Main contents -->
+        <div id="main-contents">
+            <!---->
+            <div class="std-box">
+                <div class="media-center">
+                    <img src="./images/home-camera.png">
+                </div>
+                <div class="text-link">
+                    <a href="#"> ARカメラを使う </a>
+                </div>
+            </div>
 
-  <div class="container">
+            <!---->
+            <div class="std-box">
+                <h1>スタンプ収集状況</h1>
+                <div class="media-center">
+                    <img style="width: 100px;" src="./images/empty.png">
+                </div>
+                <div class="text-link">
+                    <a href="#">スタンプ一覧</a>
+                </div>
+            </div>
 
-    <h2>スタンプコンプリートで第二体育館で景品と交換できます！</h2>
+            <!---->
+            <div class="std-box">
+                <div class="media-center">
+                    <a href="#"><img style="width: 80px;"; src="./images/TIckets.png"></a>
+                </div>
+                <div class="text-link">
+                    <a href="#">チケットを見る</a>
+                </div>
+            </div>
+        </div>
+        <footer>
 
-
-    <a href="ar.html" class="square1">
-      <img src="images/ui/home-camera.png" alt="photo-mode">
-      <p>ARカメラを使用する</p>
-    </a>
-    <div class="square2">
-      <p>スタンプ収集状況</p>
-      <p id="percent">0%</p>
-
-      <a href="stamps.html">スタンプ一覧</a>
-    </div>
-  </div>
-
-  <script>
-  var count = 0;
-  for(let i = 1;i <= 5;i++){
-    if(localStorage.getItem("s" + String(i)) == "1"){
-      count++;
-    }
-  }
-  if(count !== 0){
-    var percent = (count / 5) * 100;
-    document.getElementById("percent").innerHTML = String(percent) + "%";
-  }
-  </script>
-</body>
-
+        </footer>
+    
+    </body>
 </html>
