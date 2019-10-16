@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/*  */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background:#c0c0c0;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-contents {
+    width: 500px;
+    margin: 0px auto;
+}
+
+/*@media (min-width: 000px) and (max-width: 000px;)*/
+@media (max-width:500px) {
+    /*画面が500px以下の際に使用*/
+    #main-contents {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+header {
+    font-family: 'Franklin Gothic Medium';
+    background:#778899;
+    color:rgba(0, 0, 0, 1);
+    font-size: 80px;
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+}
+
+a,a visited{
+    color:black;
+    text-decoration: none;
+}
+h1 {
+    color: #808080;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+
+/**/
+.std-box {
+    background: rgba(255, 255, 255, 1);
+    color: #808080;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px 10px 20px 10px;
+    padding: 20px;
+}
+
+.text-link {
+    font-size: 20px;
+    text-align: center;
+}
+
+.media-center {
+    text-align: center;
+    margin: 10px 0px;
+}
+footer{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.btn-trigger {
+    -webkit-appearance:none;
+    appearance:none;
+    position: fixed;/*要素を固定*/
+    top: 24px;
+    right: 12px;
+    z-index: 110;
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: #fff; 
+    overflow : hidden;
+    outline : none;
+}
+
+.btn-trigger span {
+    position: absolute;/*fixedを起点に位置を指定*/
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: #a0a0a0;
+    transition: all 0.5s;
+}
+
+.btn-trigger span:first-of-type {
+    top: 10px;
+}
+.btn-trigger span:nth-of-type(2) {
+    top: 20px;
+}
+.btn-trigger span:last-of-type {
+    bottom: 10px;
+}
+.btn-trigger.active span:first-of-type {
+    transform: rotate(45deg);
+    top: 20px;
+}
+.btn-trigger.active span:nth-of-type(2) {
+    opacity:0;
+}
+.btn-trigger.active span:last-of-type {
+    transform: rotate(-45deg);
+    bottom: 20px;
+}   
