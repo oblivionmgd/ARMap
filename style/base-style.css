@@ -2,7 +2,7 @@
 
 /*  */
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif,'Open Sans', sans-serif;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 }
 
 header {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Open Sans',sans-serif;
     background:#457389;
     color:rgba(0, 0, 0, 1);
     font-size: 80px;
@@ -70,47 +70,42 @@ footer{
     background-color: rgba(0, 0, 0, 0);
 
 }
-.btn-trigger {
-    -webkit-appearance:none;
-    appearance:none;
-    position: fixed;/*要素を固定*/
-    top: 24px;
-    right: 12px;
-    z-index: 110;
-    width: 40px;
-    height: 40px;
-    border:none;
-    background-color: #fff; 
-    overflow : hidden;
-    outline : none;
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
 }
-
-.btn-trigger span {
-    position: absolute;/*fixedを起点に位置を指定*/
-    display: block;
-    width: 28px;
-    height: 2px;
-    background-color: #a0a0a0;
-    transition: all 0.5s;
+.menu-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
 }
-
-.btn-trigger span:first-of-type {
-    top: 10px;
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
 }
-.btn-trigger span:nth-of-type(2) {
-    top: 20px;
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
 }
-.btn-trigger span:last-of-type {
-    bottom: 10px;
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
 }
-.btn-trigger.active span:first-of-type {
-    transform: rotate(45deg);
-    top: 20px;
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
 }
-.btn-trigger.active span:nth-of-type(2) {
-    opacity:0;
-}
-.btn-trigger.active span:last-of-type {
-    transform: rotate(-45deg);
-    bottom: 20px;
-}   
+.menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+  }
+  .menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu-trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
+  }
