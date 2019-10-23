@@ -26,7 +26,7 @@ body {
 }
 
 header {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Open Sans', sans-serif;
     background:#457389;
     color:rgba(0, 0, 0, 1);
     font-size: 80px;
