@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/tickets.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>NIT2.0 ARスタンプラリー</title>
 
 </head>
@@ -45,17 +46,36 @@
       </div>
     </div>
   </header>
-
-  <div id="show-ticket" class="container">
+  <div id="show-ticket" class="container" >
     <h2 id="ticket" class="belongings">使用できるチケットは<br>ありません</h2>
     <p class="attention">チケットを使用する際は<br>スタッフまでお知らせください</p>
   </div>
 
   <script>
   //localStorage.setItem("ticket", "ON");
-  if(localStorage.getItem("ticket") == "ON"){
-    document.getElementById("ticket").innerHTML = "<a href='useTicket.html'>Special Ticket</a>";
-  }
+
+    document.getElementById("ticket").innerHTML = '<div class="box click" >Special Tiket'+
+      '	<input type="button" value="詳細" class="button" onclick="al()"></input>'+
+      ' <a href="useTicket.html" class="useButton">使用する</a>'+
+      '</div>';
+    
+      
+    $(function() {
+    $(".click").click(function() {
+         $(this).addClass("clicked");
+     });
+    });
+
+    $(function() {
+    $(".esc").click(function() {
+         $(".box.click.clicked").removeClass("clicked");
+     });
+    });
+
+    
+    function al(){
+      alert("なんかそれっぽいチケットです。左のボタンで使用できます。");
+    }
   //"取得済みチケット<a href="useTicket.html"><img src="images/ticket1.png" /></a>";
   </script>
 
