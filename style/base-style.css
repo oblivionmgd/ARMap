@@ -13,7 +13,7 @@ body {
 
 #main-contents {
     width: 90vw;
-    margin: 0px auto;
+    margin: 0px 5vw;
 }
 
 /*@media (min-width: 000px) and (max-width: 000px;)*/
@@ -31,7 +31,7 @@ header {
     color:rgba(0, 0, 0, 1);
     font-size: 80px;
     margin: 0px 0px 20px 0px;
-    padding: 10px;
+    padding: 0 5vw;
 }
 
 a,a visited{
