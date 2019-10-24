@@ -1,5 +1,7 @@
-# ARMap Tutorial  
-AR.jsとA*frameを使っていろんなことをします。  
+# ARMap
+AR.jsとA*frameを使っていろんなことをします。
+# URL
+[Netlify](https://clever-feynman-15de6e.netlify.com/)  
 ## Overview
 昨年のスタンプラリーのUI/UXの改良及び校内マップの実装、スタンプラリーのモデル改善  
 ## Todo List  
