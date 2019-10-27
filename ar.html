@@ -17,11 +17,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style/ar.css">
+    <link rel="stylesheet" href="style/base-style.css">
     <!--
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/main.css">
     -->
-    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/home.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet"> 
+
     <title>NIT2.0 ARスタンプラリー</title>
 
 <meta name="twitter:card" content="summary_large_image" />
@@ -202,32 +205,18 @@
 
     <div id="main-container">
       <header>
+          <div id="ham-menu">
+              <ul>
+                  <li><a href="./ar.html">ARCamera</a></li>
+                  <li><a href="./stamps.html">Stamps</a></li>
+                  <li><a href="./ticets.html">Tickets</a></li>
+                  <li><a href="./help.html">Help</a></li>
+              </ul>
+          </div>
+          <div id="menu-ground"></div>
         <div class="header-title">
-          <h1>Camera</h1>
+          <h1 class="home">Camera</h1>
         </div>
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input" style="top: 30px;"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">
-        <label class="btn-close" for="nav-input"><i class="fas fa-times"></i></label>
-        <ul class="page-list">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="stamps.html">Stamps</a>
-          </li>
-          <li>
-            <a href="ar.html">Camera</a>
-          </li>
-          <li>
-            <a href="tickets.html">Tickets</a>
-          </li>
-        </ul>
-      </div>
     </header>
 
         <div id="camera-container" class="tab-container" v-show="cameraSelected">
