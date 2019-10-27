@@ -29,11 +29,69 @@ header {
     font-family: 'Open Sans', sans-serif;
     background:#457389;
     color:#FFF;
+    font-size: 40px;
+    margin: 0px 0px 20px 0px;
+    padding: 0 5vw;
+}
+.Home{
+    font-family: 'Open Sans', sans-serif;
+    background:#457389;
+    color:#FFF;
+    text-align: left;
     font-size: 80px;
     margin: 0px 0px 20px 0px;
     padding: 0 5vw;
 }
+#ham-menu{
+    background-color: #457389;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px 40px;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    transition: transform 0.1s linear 0s;
+    width: 300px;
+    z-index: 1000;
+}
 
+#ham-menu::before {
+    background-color: #457389; 
+    border-radius: 0 0 0 10px; 
+    color: #333; 
+    content: "≡";
+    display: block;
+    font-size: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: 100%;
+    text-align: center;
+    top: 0;
+    width: 50px;
+}
+
+#menu-background {
+    background-color: #333; 
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.1s linear 0s; 
+    width: 100%;
+    z-index: -1;
+}
+
+#ham-menu:hover {
+    transform: translate(-300px); 
+}
+
+#ham-menu:hover + #menu-background {
+    opacity: 0.5;
+    z-index: 999;
+}
 a,a visited{
     color:black;
     text-decoration: none;
@@ -70,47 +128,3 @@ footer{
     background-color: rgba(0, 0, 0, 0);
 
 }
-.btn-trigger {
-    -webkit-appearance:none;
-    appearance:none;
-    position: fixed;/*要素を固定*/
-    top: 24px;
-    right: 12px;
-    z-index: 110;
-    width: 40px;
-    height: 40px;
-    border:none;
-    background-color: #fff; 
-    overflow : hidden;
-    outline : none;
-}
-
-.btn-trigger span {
-    position: absolute;/*fixedを起点に位置を指定*/
-    display: block;
-    width: 28px;
-    height: 2px;
-    background-color: #a0a0a0;
-    transition: all 0.5s;
-}
-
-.btn-trigger span:first-of-type {
-    top: 10px;
-}
-.btn-trigger span:nth-of-type(2) {
-    top: 20px;
-}
-.btn-trigger span:last-of-type {
-    bottom: 10px;
-}
-.btn-trigger.active span:first-of-type {
-    transform: rotate(45deg);
-    top: 20px;
-}
-.btn-trigger.active span:nth-of-type(2) {
-    opacity:0;
-}
-.btn-trigger.active span:last-of-type {
-    transform: rotate(-45deg);
-    bottom: 20px;
-}   
