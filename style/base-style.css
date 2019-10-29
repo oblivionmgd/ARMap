@@ -40,7 +40,6 @@ header {
     text-align: left;
     font-size: 80px;
     margin: 0px 0px 20px 0px;
-    padding: 0 5vw;
 }
 #ham-menu{
     background-color: #457389;
@@ -61,14 +60,14 @@ header {
     color: #333; 
     content: "≡";
     display: block;
-    font-size: 80px;
-    height: 80px;
-    line-height: 80px;
+    font-size: 60px;
+    height: 60px;
+    line-height: 60px;
     position: absolute;
     right: 100%;
     text-align: center;
     top: 0;
-    width: 80px;
+    width: 60px;
 }
 
 #menu-background {
