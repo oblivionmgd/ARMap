@@ -135,7 +135,7 @@ setInterval(() => {
             content: {
                 element: "img",
                 attributes: {
-                    src: "../images/stamps/s" + String(displayedMarkerId) + ".png",
+                    src: "../images/stamps/2019/s" + String(displayedMarkerId) + ".png",
                     style: "width:90%"
                 }
             }
