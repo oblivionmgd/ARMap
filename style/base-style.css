@@ -60,9 +60,9 @@ header {
     color: #333; 
     content: "≡";
     display: block;
-    font-size: 60px;
-    height: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    height: 50px;
+    line-height: 50px;
     position: absolute;
     right: 100%;
     text-align: center;
@@ -123,7 +123,7 @@ h1 {
     margin: 10px 0px;
 }
 
-li{
+.links li{
     list-style: none;
 }
 .links{
@@ -134,5 +134,9 @@ li{
     color:#FFF;
     font-size:30px;
     padding: 0px 5px;
+    margin: 0 0;
     height: 210px;
+}
+footer{
+    bottom: 0;
 }
