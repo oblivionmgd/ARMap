@@ -122,8 +122,17 @@ h1 {
     text-align: center;
     margin: 10px 0px;
 }
-footer{
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0);
 
+li{
+    list-style: none;
+}
+.links{
+    width: 100%;
+    height: 150px;
+    font-family: 'Open Sans', sans-serif;
+    background:#457389;
+    color:#FFF;
+    font-size:30px;
+    padding: 0px 5px;
+    height: 210px;
 }
