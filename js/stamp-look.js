@@ -167,7 +167,7 @@ setInterval(() => {
 
 for (let index = 1; index <= fullPoints; index++) {
     let image = new Image() //新たなイメージ要素を作成
-    image.src = "../images/stamps/s" + String(index) + ".png"
+    image.src = "../images/stamps/2019/s" + String(index) + ".png"
 }
 let image = new Image()
 image.src = "../images/stamps/complete.png"
