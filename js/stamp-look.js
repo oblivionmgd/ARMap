@@ -61,7 +61,7 @@ const fullPoints = 5 //マーカーの総数
 
 for (let index = 1; index <= 5; index++) {
     if (localStorage.getItem("s" + String(index)) == "1") {//s数字　スタンプが"1"のとき
-        document.getElementById("stamp-img-" + String(index)).src = "../images/stamps/s" + String(index) + ".png"
+        document.getElementById("stamp-img-" + String(index)).src = "../images/stamps/2019/s" + String(index) + ".png"
     }
 //stamp-img-数字 のスタンプの画像をs indexのsrcに変更する
 }
@@ -160,7 +160,7 @@ setInterval(() => {
 
 
         localStorage.setItem("s" + String(displayedMarkerId), "1")
-        document.getElementById("stamp-img-" + String(displayedMarkerId)).src = "../images/stamps/s" + String(displayedMarkerId) + ".png"
+        document.getElementById("stamp-img-" + String(displayedMarkerId)).src = "../images/stamps/2019/s" + String(displayedMarkerId) + ".png"
         ga('set', 'dimension1', String(currentPoints)); //?
     }
 }, 100)
