@@ -38,7 +38,7 @@ header {
     background:#457389;
     color:#FFF;
     text-align: left;
-    font-size: 80px;
+    font-size: 60px;
     margin: 0px 0px 20px 0px;
 }
 #ham-menu{
@@ -60,16 +60,15 @@ header {
     color: #333; 
     content: "≡";
     display: block;
-    font-size: 50px;
-    height: 50px;
-    line-height: 50px;
+    font-size: 60px;
+    height: 60px;
+    line-height: 60px;
     position: absolute;
     right: 100%;
     text-align: center;
     top: 0;
     width: 60px;
 }
-
 #menu-background {
     background-color: #333; 
     display: block;
