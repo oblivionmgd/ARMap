@@ -41,10 +41,9 @@
     <a-scene embedded arjs="trackingMethod:best; debugUIEnabled:false;">
 
       <a-assets>
-        <a-asset-item id="obj1" src="/models/2019-c/2019-c.obj"></a-asset-item>   <!-- objファイル -->
-        <a-asset-item id="mtl1" src="/models/2019-c/2019-c.mtl"></a-asset-item>
+        <a-asset-item id="obj1" src="/models/2019-m/2019-m.obj"></a-asset-item>   <!-- objファイル -->
+        <a-asset-item id="mtl1" src="/models/2019-m/2019-m.mtl"></a-asset-item>
       </a-assets>
-
       <a-assets>
         <a-asset-item id="obj2" src="/models/2019-e/2019e.obj"></a-asset-item>   <!-- objファイル -->
         <a-asset-item id="mtl2" src="/models/2019-e/2019e.mtl"></a-asset-item>
@@ -98,16 +97,6 @@
               position="0 1.0 0"
               rotation="270 0 0"
               shadow="receive: true">
-
-              <a-animation
-                  attribute="rotation"
-                  from="270 0 0"
-                  to="270 360 360"
-                  dur="5000"
-                  repeat="indefinite"
-                  easing="ease"
-              ></a-animation>
-
           </a-gltf-model>
       </a-marker>
 
@@ -117,14 +106,6 @@
               mtl="#mtl2"
               scale="0.005 0.005 0.005"
               position="0 1.0 0">
-              <a-animation
-                  attribute="rotation"
-                  from="0 0 0"
-                  to="0 360 0"
-                  dur="4000"
-                  easing="linear"
-                  repeat="indefinite"
-              ></a-animation>
           </a-obj-model>
         </a-marker>
 
@@ -136,14 +117,6 @@
               position="0 0 0" rotation="0 0 0"
               scale="0.0005 0.0005 0.0005"
               visible="true">
-              <a-animation
-                  attribute="rotation"
-                  from="270 0 0"
-                  to="270 360 0"
-                  dur="5000"
-                  repeat="indefinite"
-                  easing="ease"
-              ></a-animation>
           </a-obj-model>
         </a-marker>
 
@@ -153,14 +126,6 @@
               mtl="#mtl4"
               scale="0.005 0.005 0.005"
               position="0 1.0 0">
-              <a-animation
-                  attribute="rotation"
-                  from="270 0 0"
-                  to="270 360 0"
-                  dur="5000"
-                  repeat="indefinite"
-                  easing="ease"
-              ></a-animation>
           </a-obj-model>
         </a-marker>
 
@@ -171,14 +136,6 @@
               mtl="#mtl5"
               scale="0.005 0.005 0.005"
               position="0 1.0 0">
-              <a-animation
-                  attribute="rotation"
-                  from="270 0 0"
-                  to="270 360 0"
-                  dur="5000"
-                  repeat="indefinite"
-                  easing="ease"
-              ></a-animation>
           </a-obj-model>
         </a-marker>
 
@@ -206,7 +163,7 @@
 
     <div id="main-container">
       <header>
-          <div id="ham-menu">
+          <div id="ham-menu" ontouchstart="">
               <ul>
                   <li><a href="./ar.html">ARCamera</a></li>
                   <li><a href="./stamps.html">Stamps</a></li>
